@@ -1,38 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Encuesta ITC</title>
     <link rel="stylesheet" href="estilo.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+<body>
+    
+</body>
+</html>
 
 <body>
 
-    <div id="datos">
-        <h2>Datos personales obligatorios a completar</h2>
 
-        <br>
-        <form>
-            <label for="nombre-usuario"> Nombre </label>
-            <input type="text" placeholder="ingrese nombre" id="nombre-usuario" required> <br>
 
-            <label for="apellido-usuario">Apellido</label>
-            <input type="text" placeholder="ingrese apellido" id="apellido-usuario" required><br>
-            <label for="DNI-usuario">DNI</label>
-            <input type="number" placeholder="ingrese DNI" id="DNI-usuario" required> <br>
+   <!--======================================contacto==============================--> 
 
-            <label for="email-usuario"> Email </label>
-            <input type="email" placeholder="ingrese email" id="email-usuario" required><br>
 
-            <button class="btn-primary">
-                <a href="encuesta.html">Enviar</a>
-            </button>
-        </form>
-        <hr>
+
+   <div class="container" id="encuesta1">
+    <div id="contenedor-formulario"  class="text-center mb-4">
+        <h2>Datos personales obligatorios</h2>
+        
     </div>
-</body>
+    
+        <form action="encuesta.html" method="post">
+
+              <div class="mb-3 text-center">
+             
+                  <input type="text" class="form-control text-center" id="nombre-duda" aria-describedby="nombreHelp" placeholder="Nombre y apellido" required>
+                  <div id="email" class="form-text"></div>
+              
+              
+                  <div class="mb-3 text-center">
+                
+                <input type="number" class="form-control text-center" id="numero" aria-describedby="numeroHelp" placeholder="Num. telefono" required>
+                <div id="email" class="form-text"></div>
+
+                <div class="mb-3 text-center">
+                
+                    <input type="number" class="form-control text-center" id="DNI" aria-describedby="numeroHelp" placeholder="Num. DNI" required>
+                    <div id="DNI" class="form-text"></div>
+
+                 <div class="mb-3 text-center">
+              
+              <input type="email" class="form-control text-center" id="email-duda" aria-describedby="emailHelp" placeholder="Email" required>
+              <div id="email" class="form-text"></div>
+
+
+            </div>
+            <div class="mb-4">
+  
+             
+            </div>
+            
+
+            <button type="submit" class="btn btn-light w-100 fs-5" > <a href="encuesta.html"></a>Enviar</button>
+          </form>
+    </form>
+
+      <!-- ===================================cierre de pag========================== -->
+      
+
+
+      
+    
+      <footer class="w-100 d-flex align-items-center justify-content-center flex-wrap">
+        <p class="fs-5 px-3 pt-3">ITC Soluciones</p>
+        <div id="iconos">
+          <a href="https://www.instagram.com/itcs.a"><i class="bi bi-instagram"></i></a>
+          <a href="https://ar.linkedin.com/company/itc-soluciones"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </footer>
+   </div>
+
+<br>  
+
+ 
+</body> 
 
 </html>
