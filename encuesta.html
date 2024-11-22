@@ -4,46 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encuesta</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloencuesta.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <style>
-        body {
-            background-color: #f8f9fa;
-            color: #333;
-        }
-        #encuesta {
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            padding: 30px;
-            margin-top: 50px;
-        }
-        h3 {
-            color: #007bff;
-            margin-bottom: 30px;
-        }
-        label {
-            font-weight: bold;
-            margin-top: 15px;
-        }
-        select, input[type="text"] {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            margin-bottom: 15px;
-            border: 1px solid #ced4da;
-            border-radius: 4px;
-        }
-        .btn-primary {
-            background-color: #007bff;
-            border: none;
-            padding: 10px 20px;
-        }
-        .btn-primary:hover {
-            background-color: #0056b3;
-        }
-    </style>
 </head>
 <body>
     
@@ -52,7 +15,7 @@
 <div class="container">
     <div id="encuesta">
         <h3 class="text-center">Encuesta</h3>
-        <form id="encuestaForm" method="post" action="pag3.html">
+        <form id="encuestaForm" method="get" action="pag3.html">
             <div class="mb-3">
                 <label for="anos-trabajo" class="form-label">¿Hace cuántos años trabajas para ITC?</label>
                 <select id="anos-trabajo" class="form-select">
